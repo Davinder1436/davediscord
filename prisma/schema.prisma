@@ -20,6 +20,7 @@ model Profile{
   channels Channel[]
 }
 
+
 model Server{
   id String @id @default(uuid())
   name String 

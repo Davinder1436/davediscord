@@ -1,9 +1,9 @@
 "use client";
-import { useSocket } from "./providers/socket-io-provider";
+import { usePusherClient } from "./providers/pusher-provider";
 import { Badge } from "./ui/badge";
 
 export const SocketIndicator = () => {
-    const { isConnected } = useSocket();
+    const { isConnected } = usePusherClient()
     
 
         if(!isConnected){

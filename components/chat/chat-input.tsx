@@ -42,7 +42,9 @@ const onSubmit = async(values:z.infer<typeof formSchema>)=>{
         url: apiUrl,
         query
     })
-    await axios.post(url,values);
+    const res = await axios.post(url,values);
+    console.log(res)
+
    }catch(error){
     console.log(error)
    }
